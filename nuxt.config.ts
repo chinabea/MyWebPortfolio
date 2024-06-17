@@ -8,8 +8,7 @@ const configPath = path.resolve(__dirname, 'config.js');
 if (!fs.existsSync(configPath)) {
   throw new Error(`Resource not found!`);
 }
- 
-// Load the config file
+// Load the config file  
 const customConfig = require(configPath);
 
 // Nuxt configuration
