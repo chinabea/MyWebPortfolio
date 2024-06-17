@@ -6,7 +6,7 @@ const configPath = path.resolve(__dirname, 'config.js');
 
 // Check if the config file exists
 if (!fs.existsSync(configPath)) {
-  throw new Error(`The config file (${configPath}) is missing. Please create it before running the project.`);
+  throw new Error(`Resource not found!`);
 }
  
 // Load the config file
