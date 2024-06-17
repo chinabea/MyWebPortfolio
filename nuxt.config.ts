@@ -8,7 +8,7 @@ const configPath = path.resolve(__dirname, 'config.js');
 if (!fs.existsSync(configPath)) {
   throw new Error(`The config file (${configPath}) is missing. Please create it before running the project.`);
 }
-
+ 
 // Load the config file
 const customConfig = require(configPath);
 
