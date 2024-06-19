@@ -8,17 +8,21 @@
       <!-- Introduction -->
       <br><br>
       <h1 class="text-3xl font-montserrat leading-normal mb-4">
-        👋, my name is China Bea and I am a freelance
+        👋, my name is China Bea and I am a
       </h1>
       
       <!-- Main title -->
-      <h2 class="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 mb-6">
+      <!-- <h2 class="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 mb-6">
         Full Stack Developer
-      </h2>
+      </h2> -->
+
+      <h2 class="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 mb-6 custom-heading">
+    Full Stack Developer
+</h2>
       
       <!-- Call to action button -->
       <div class="mt-6">
-        <button @click="openModal" class="text-xl bg-pink-500 text-white py-2 px-4 rounded-full">
+        <button @click="showModal = true" class="text-xl bg-pink-500 text-white py-2 px-4 rounded-full">
           Let's start a project together
         </button>
       </div>
@@ -28,39 +32,34 @@
         <!-- <img src="https://placehold.co/100x100" alt="Badge 1" class="h-16 w-16">
         <img src="https://placehold.co/100x100" alt="Badge 2" class="h-16 w-16"> -->
       </div>
-
       
-  <div>
-    <div v-if="isOpen" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-      <div class="bg-white p-4 rounded-lg">
-        <button @click="closeModal" class="absolute top-2 right-2 text-gray-500">&times;</button>
-        <slot>HRTHETYHRTYJRJT</slot>
-      </div>
-    </div>
-    <button @click="openModal" class="bg-blue-500 text-white p-2 rounded-lg">Open Modal</button>
-  </div>
-
 
     </div>
+
+    
+    <SavedModal v-show="showModal" @close-modal="showModal = false" />
+
+
+
   </div>
 </template>
 
 <script>
+import SavedModal from '~/components/SavedModal.vue'
 export default {
+  // data() {
+  //   return {
+  //     isOpen: false
+  //   };
+  // },
+  components: { SavedModal },
   data() {
     return {
-      isOpen: false
-    };
-  },
-  methods: {
-    openModal() {
-      this.isOpen = true;
-    },
-    closeModal() {
-      this.isOpen = false;
+      showModal: false,
     }
-  }
+  },
 };
+
 </script>
 
 <style scoped>
@@ -72,5 +71,16 @@ export default {
 
 .font-montserrat {
   font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.custom-heading {
+    line-height: 1.2; /* Adjust the line-height if needed */
+    padding-top: 10px; /* Add padding to ensure the gradient is not cut off */
+    padding-bottom: 10px; /* Add padding to ensure the gradient is not cut off */
+    margin-top: 0; /* Adjust the margin to ensure there is no cut off */
+    margin-bottom: 0; /* Adjust the margin to ensure there is no cut off */
+    overflow: visible; /* Ensure overflow is visible */
 }
 </style>
