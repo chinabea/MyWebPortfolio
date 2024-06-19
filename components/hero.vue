@@ -20,7 +20,7 @@
       </div>
       <!-- New -->
       <Modal :isVisible="isModalVisible" @close="closeModal">
-        <h1 class="text-3xl font-montserrat leading-normal mb-4">What do you need?</h1>
+        <h1 class="text-3xl font-bold font-montserrat leading-normal mb-4">What do you need?</h1>
         <p>This is some content inside the modal!</p>
       </Modal>
       <!-- Badges or images section -->
