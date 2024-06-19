@@ -10,26 +10,26 @@
         </div>
       </div>
     </div>
-  </template>
-  
-  <script>
-  export default {
+</template>
+
+<script>
+export default {
     props: {
-      isVisible: {
+    isVisible: {
         type: Boolean,
         default: false
-      }
+    }
     },
     methods: {
-      closeModal() {
+    closeModal() {
         this.$emit('close');
-      }
     }
-  }
-  </script>
-  
-  <style scoped>
-  .modal-overlay {
+    }
+}
+</script>
+
+<style scoped>
+.modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -39,16 +39,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .modal-container {
+}
+
+.modal-container {
     position: relative;
     padding: 4px; /* Space for the border */
     border-radius: 9px; /* Border radius + padding */
     background: linear-gradient(45deg, #ec4899, #a855f7, #f59e0b); /* Gradient border */
-  }
-  
-  .modal {
+}
+
+.modal {
     position: relative;
     padding: 20px;
     border-radius: 5px;
@@ -59,9 +59,24 @@
     background: black;
     z-index: 1; /* Ensure the content is above the pseudo-element */
     overflow: auto; /* Enable scrolling if content overflows */
-  }
-  
-  .close-button {
+}
+
+/* Responsive adjustments */
+/* @media (min-width: 768px) {
+.modal {
+    max-width: 80%;
+    width: 600px; 
+}
+}
+
+@media (min-width: 1024px) {
+.modal {
+    max-width: 70%;
+    width: 800px; 
+}
+} */
+
+.close-button {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -70,11 +85,10 @@
     color: white; /* Ensure the close button is visible on a dark background */
     font-size: 16px;
     cursor: pointer;
-  }
-  
-  .modal-content {
+}
+
+.modal-content {
     margin-top: 20px;
     color: white; /* Ensure content is visible on a dark background */
-  }
-  </style>
-  
+}
+</style>
