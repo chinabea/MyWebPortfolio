@@ -6,7 +6,7 @@
     <!-- Content container -->
     <div class="relative z-10 mt-10">
       <!-- Introduction -->
-      <br><br>
+       <div class="mt-10"></div>
       <h1 class="text-3xl font-montserrat leading-normal mb-4">
         👋, my name is China Bea and I am a
       </h1>
