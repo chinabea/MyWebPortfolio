@@ -29,12 +29,12 @@
 
     <!-- Navigation links -->
     <ul :class="{ 'hidden': !isMenuOpen }" class="flex items-center space-x-6 ml-auto lg:flex">
-        <NavItem name="Home" />
-        <NavItem name="About" />
-        <NavItem name="Projects" />
-        <NavItem name="Experience" />
-        <NavItem name="Certificate" />
-        <NavItem name="Skills" />
+        <NuxtLink to="/">Home</NuxtLink>
+        <NuxtLink to="/about">About</NuxtLink>
+        <NuxtLink to="/projects">Projects</NuxtLink>
+        <NuxtLink to="/experience">Experience</NuxtLink>
+        <NuxtLink to="/certificate">Certificate</NuxtLink>
+        <NuxtLink to="/skills">Skills</NuxtLink>
         <a href="mailto:china.t.bea@gmail.com" class="bg-pink-500 text-white py-2 px-4 rounded-full block text-center" target="_blank">
           Contact Me
         </a>
