@@ -10,7 +10,7 @@
         👋, my name is China Bea and I am a
       </h1>
       <h2 class="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 mb-6 custom-heading">
-          Full Stack Developer
+          Software Developer
       </h2>
       <!-- Call to action button -->
       <div class="mt-6">
