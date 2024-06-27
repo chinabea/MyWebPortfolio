@@ -29,7 +29,7 @@
 </template>
 
 <script lang="ts" setup>
-import logoPath from "../assets/images/RPIMTS-Dashboard.png";
+import logoPath from "@/assets/images/projects/RPIMTS-Dashboard.png";
 
 </script>
 
