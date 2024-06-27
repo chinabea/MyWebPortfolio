@@ -5,9 +5,9 @@
   <div class="mt-8"></div>
   <div class="projects-grid">
     <div class="project-card" v-for="(project, index) in projects" :key="index">
-      <img :src="project.logoPath" :alt="project.title">
+      <img :src="project.logoPath" :alt="project.title" class="border-light-pink">
       <div class="overlay">
-        <h3>{{ project.title }}</h3>
+        <p>{{ project.title }}</p>
         <p>{{ project.description }}</p>
       </div>
     </div>
@@ -16,9 +16,14 @@
 
 <script>
 import Navbar from '@/components/navbar.vue';
-import logoPath1 from "@/assets/images/RPIMTS-Login.png";
-import logoPath2 from "@/assets/images/RPIMTS-Projects.png";
-import logoPath3 from "@/assets/images/RPIMTS-Tracking.png";
+import certif1 from "@/assets/images/certificates/blockchain.jpg";
+import certif2 from "@/assets/images/certificates/bycit1.png";
+import certif3 from "@/assets/images/certificates/bycit2.png";
+import certif4 from "@/assets/images/certificates/colloquium.jpg";
+import certif5 from "@/assets/images/certificates/cybersecurity.jpg";
+import certif6 from "@/assets/images/certificates/deanslist.jpg";
+import certif7 from "@/assets/images/certificates/ojt.jpg";
+import certif8 from "@/assets/images/certificates/python.jpg";
 
 export default {
   components: {
@@ -27,9 +32,14 @@ export default {
   data() {
     return {
       projects: [
-        { title: 'Project 1', description: 'A short description of Project 1.', logoPath: logoPath1 },
-        { title: 'Project 2', description: 'A short description of Project 2.', logoPath: logoPath2 },
-        { title: 'Project 3', description: 'A short description of Project 3.', logoPath: logoPath3 },
+        { title: '', description: 'DICT - Blockchain: Fundamentals and Its Use Cases', logoPath: certif1 },
+        { title: '', description: '11th Bicol Youth Congress in Information Technology', logoPath: certif2 },
+        { title: '', description: '7th ICT Research Colloquium', logoPath: certif4 },
+        { title: '', description: 'Cybersecurity: How to be Safe in Cyberspace', logoPath: certif5 },
+        { title: '', description: 'Dean\'s List Award', logoPath: certif6 },
+        { title: '', description: 'OJT - Certificate of Completion', logoPath: certif7 },
+        { title: '', description: 'Learning Python Programming', logoPath: certif8 },
+        { title: '', description: '11th Bicol Youth Congress in Information Technology', logoPath: certif3 },
         // Add more projects with their respective images as needed
       ],
     };
@@ -42,6 +52,8 @@ export default {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .project-card {
@@ -53,6 +65,7 @@ export default {
   width: 100%;
   height: auto;
   transition: transform 0.3s;
+  /* border: 5px solid #f9a8d4; Tailwind CSS color pink-300 */
 }
 
 .project-card .overlay {
