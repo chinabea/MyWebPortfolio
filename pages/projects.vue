@@ -1,6 +1,8 @@
 <template>
   <div class="black-background relative z-10">
     <Navbar />
+  </div>
+    <div class="mt-8"></div>
   <div class="projects-grid">
     <div class="project-card">
       <img v-bind:src="logoPath" alt="Project 1">
@@ -25,7 +27,7 @@
     </div>
     <!-- Repeat for other projects -->
   </div>
-</div>
+<!-- </div> -->
 </template>
 
 <script lang="ts" setup>
