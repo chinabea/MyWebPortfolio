@@ -7,11 +7,14 @@
       <!-- Introduction -->
        <div class="mt-10"></div>
       <h1 class="text-3xl font-montserrat leading-normal mb-4">
-        👋, my name is China Bea and I am a
+        👋, my name is China Bea and I am an Independent
       </h1>
       <h2 class="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 mb-6 custom-heading">
           Software Developer
       </h2>
+      <!-- <h6 class="text-l leading-normal mb-4">
+        "turning ideas into real life products is my calling"
+      </h6> -->
       <!-- Call to action button -->
       <div class="mt-6">
         <button @click="openModal" class="text-xl bg-pink-500 text-white py-2 px-4 rounded-full mx-3">

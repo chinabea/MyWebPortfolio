@@ -2,80 +2,45 @@
   <div class="black-background relative z-10">
     <Navbar />
   </div>
-    <div class="mt-8"></div>
-  <div class="projects-grid">
-    <div class="project-card">
-      <img v-bind:src="logoPath" alt="Project 1">
-      <div class="overlay">
-        <h3>Project 1</h3>
-        <p>A short description of Project 1.</p>
-      </div>
-    </div>
-    <div class="project-card">
-      <img v-bind:src="logoPath" alt="Project 1">
-      <div class="overlay">
-        <h3>Project 1</h3>
-        <p>A short description of Project 1.</p>
-      </div>
-    </div>
-    <div class="project-card">
-      <img v-bind:src="logoPath" alt="Project 1">
-      <div class="overlay">
-        <h3>Project 1</h3>
-        <p>A short description of Project 1.</p>
-      </div>
-    </div>
-    <!-- Repeat for other projects -->
+  <div class="flex flex-wrap gap-4">
+    <CardComponent
+      title="The simplest example is kafka + golang"
+      description="This article presents a simple way to implement a micro-service architecture using Kafka, Golang and Docker"
+      :imageSource="require('@/assets/images/projects/RPIMTS-Tracking.png')"
+    />
+    <CardComponent
+      title="Another project title"
+      description="This article discusses another interesting topic relevant to your projects"
+      :imageSource="require('@/assets/images/projects/another-image.png')"
+    />
+    <CardComponent
+      title="Yet another project title"
+      description="This article introduces yet another fascinating project idea for you to explore"
+      :imageSource="require('@/assets/images/projects/yet-another-image.png')"
+    />
   </div>
-<!-- </div> -->
 </template>
 
-<script lang="ts" setup>
-import logoPath from "@/assets/images/projects/RPIMTS-Dashboard.png";
+<script>
+import Navbar from '@/layout/navbar.vue';
+import CardComponent from './CardComponent.vue';
 
+export default {
+  components: {
+    Navbar,
+    CardComponent,
+  },
+};
 </script>
 
 <style>
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.project-card {
-  position: relative;
-  overflow: hidden;
-}
-
-.project-card img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s;
-}
-
-.project-card .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  opacity: 0;
-  transition: opacity 0.3s;
+.flex {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
 }
-
-.project-card:hover img {
-  transform: scale(1.1);
+.flex-wrap {
+  flex-wrap: wrap;
 }
-
-.project-card:hover .overlay {
-  opacity: 1;
+.gap-4 {
+  gap: 1rem;
 }
-
 </style>
