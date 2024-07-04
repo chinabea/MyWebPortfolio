@@ -1,7 +1,4 @@
 <template>
-  <div class="black-background relative z-10">
-    <Navbar />
-  </div>
   <div class="mt-8"></div>
   <div class="projects-grid">
     <div class="project-card" v-for="(project, index) in projects" :key="index">
