@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="black-background relative z-10">
     <nav class="w-full flex justify-between items-center p-4 shadow-xl bg-transparent">
       <div class="text-3xl font-great-vibes font-bold text-pink-500">Chinabea</div>
 
