@@ -1,21 +1,16 @@
 <template>
   <div class="min-h-screen bg-black text-white flex flex-col items-center relative">
     <div class="black-background relative z-10">
-      <!-- <Navbar /> -->
       <Hero />
     </div>
   </div>
 </template>
 
 <script>
-// import Navbar from '@/layouts/navbar.vue';
 import Hero from '@/components/hero.vue';
 
-export default {
-  components: {
-    // Navbar,
-    Hero
-  }
+components: {
+  Hero
 }
 </script>
 
