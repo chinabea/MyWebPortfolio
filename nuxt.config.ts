@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   ssr: true,
   app: {
     head: {
-      title: "China Bea - Developer",
+      title: "China Bea",
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
     },
