@@ -1,5 +1,8 @@
 <template>
   <div class="mt-8"></div>
+  <div class="bg-background text-foreground min-h-screen p-8 flex flex-col items-center">
+    <h1 class="text-4xl font-bold font-montserrat mb-4">Certificates.</h1>
+    <div class="mb-8"></div>
   <div class="projects-grid">
     <div class="project-card" v-for="(project, index) in projects" :key="index">
       <img :src="project.logoPath" :alt="project.title" class="border-light-pink">
@@ -9,6 +12,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
