@@ -16,11 +16,11 @@
         "turning ideas into real life products is my calling"
       </h6> -->
       <!-- Call to action button -->
-      <div class="mt-6">
+      <!-- <div class="mt-6">
         <button @click="openModal" class="text-xl bg-pink-500 text-white py-2 px-4 rounded-full mx-3">
           Let's start a project together
         </button>
-      </div>
+      </div> -->
       <!-- New -->
       <Modal :isVisible="isModalVisible" @close="closeModal">
         <h1 class="text-3xl font-bold font-montserrat leading-normal mb-4">What do you need?</h1>
