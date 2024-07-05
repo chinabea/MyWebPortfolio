@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-8"></div>
   <div class="bg-background text-foreground min-h-screen p-8 flex flex-col items-center">
+    <div class="mt-8"></div>
     <h1 class="text-4xl font-bold font-montserrat mb-4">Skills.</h1>
     <p class="text-muted-foreground mb-8 text-center">
       <!-- If you already know what you're looking for, Laracasts is divided into various topics ranging from frameworks to packages to tools. -->
@@ -57,11 +57,11 @@ export default {
           alt: 'C++ logo'
         },
         {
-          name: 'Google Login API',
-          series: 13,
-          videos: 165,
-          image: 'https://developers.google.com/identity/images/g-logo.png',
-          alt: 'Google Login API logo'
+          "name": "Google Login API",
+          "series": 13,
+          "videos": 165,
+          "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+          "alt": "Google Login API logo"
         },
         {
           name: 'Gmail API',
