@@ -14,9 +14,12 @@
     </p>
     <h6 class="mt-4">Reach me out at:</h6>
     <div class="mt-4 flex space-x-4">
-      <a href="https://github.com/your-github" target="_blank" class="text-pink-500">GitHub</a>
-      <a href="https://linkedin.com/in/your-linkedin" target="_blank" class="text-pink-500">LinkedIn</a>
-      <a href="https://twitter.com/your-twitter" target="_blank" class="text-pink-500">Twitter</a>
+      <a href="https://github.com/your-github" target="_blank" class="text-pink-500">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" style="height: 24px;">
+      </a>
+      <a href="https://linkedin.com/in/your-linkedin" target="_blank" class="text-pink-500">
+        <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="LinkedIn Logo" style="height: 24px;">
+      </a>
     </div>
   </div>
 </template>
