@@ -1,4 +1,8 @@
 <template>
+  <div class="mt-8"></div>
+  <div class="bg-background text-foreground min-h-screen p-8 flex flex-col items-center">
+    <h1 class="text-4xl font-bold font-montserrat mb-4">Projects.</h1>
+    <div class="mb-8"></div>
     <div class="flex flex-wrap gap-4">
         <CardComponent
             v-for="(project, index) in projects"
@@ -8,6 +12,7 @@
             :imageSource="projectImage"
         />
     </div>
+</div>
 </template>
 
 <script>
