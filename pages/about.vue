@@ -1,9 +1,9 @@
 <template>
-  <div class="mt-8"></div>
   <div class="bg-background text-foreground min-h-screen p-8 flex flex-col items-center">
-    <h1 class="text-4xl font-bold font-montserrat mb-4">About.</h1>
-    <p class="text-muted-foreground mb-8 text-center">
-      A developer with less than a year of experience in designing, developing, and maintaining web applications. 
+    <div class="mt-8"></div>
+    <h1 class="text-4xl font-bold font-montserrat mb-4 mt-8">About.</h1>
+    <p class="text-muted-foreground mb-8 mt-4 text-center">
+      An experienced developer developing, and maintaining web applications. 
       Proven ability to use strong communication skills to deliver high-quality projects, enhance user experiences, 
       and improve team efficiencies. Possesses a solid understanding of full-stack development and responsive design. 
       Has successfully contributed to web development projects, ensuring timely delivery and adherence to client requirements. 
@@ -12,7 +12,7 @@
       able to work independently while managing multiple tasks simultaneously. Strong business acumen and negotiating skills, 
       aligning development efforts with business objectives.
     </p>
-    <h6 class="mt-4">Reach me out at:</h6>
+    <h6 class="mt-8">Reach me out at:</h6>
     <div class="mt-4 flex space-x-4">
       <div class="mr-3 inline-flex">
         <div class="flex items-center custom-underline hover:text-white transition duration-200 ease-in-out">
@@ -35,7 +35,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16" class="iconify iconify--bi">
             <path fill="currentColor" d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131c.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
           </svg>
-          <a href="https://www.facebook.com/china-bea" class="text-gray-300 ml-1" target="_blank">Facebook</a>
+          <a href="https://www.facebook.com/china_bea" class="text-gray-300 ml-1" target="_blank">Facebook</a>
         </div>
       </div>
     </div>
