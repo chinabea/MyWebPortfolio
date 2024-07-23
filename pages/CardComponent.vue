@@ -7,7 +7,7 @@
         <p class="text-muted-foreground mt-2">{{ description }}</p>
       </div>
       <div class="flex items-center mt-4">
-        <button class="bg-primary text-white hover:bg-primary/80 px-4 py-2 rounded-full">Read more</button>
+        <a :href="githubLink" target="_blank" class="bg-primary text-white hover:bg-primary/80 px-4 py-2 rounded-full">Open repository</a>
         <button class="ml-2 bg-secondary text-white hover:bg-secondary/80 p-2 rounded-full">
           <img aria-hidden="true" alt="arrow" src="https://openui.fly.dev/openui/24x24.svg?text=→" />
         </button>
@@ -28,6 +28,10 @@ export default {
       required: false,
     },
     imageSource: {
+      type: String,
+      required: false,
+    },
+    githubLink: {
       type: String,
       required: false,
     },
