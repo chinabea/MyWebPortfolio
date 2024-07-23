@@ -7,7 +7,7 @@
       <!-- Introduction -->
        <div class="mt-10"></div>
       <h1 class="text-3xl font-montserrat leading-normal mb-4">
-        👋, my name is China Bea and I am an Independent
+        👋, my name is China Bea and I am a
       </h1>
       <h2 class="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 mb-6 custom-heading">
           Software Developer
