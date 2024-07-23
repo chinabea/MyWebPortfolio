@@ -4,6 +4,7 @@ const path = require('path');
 // Nuxt configuration
 export default defineNuxtConfig({
   ssr: true,
+
   app: {
     head: {
       title: "China Bea",
@@ -12,6 +13,8 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: "page", mode: "out-in" },
   },
+
   modules: ["@nuxtjs/tailwindcss"],
   css: ["@/assets/css/main.css"],
+  compatibilityDate: "2024-07-23",
 });
