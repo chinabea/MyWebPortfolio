@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
+
 // Nuxt configuration
 export default defineNuxtConfig({
   ssr: true,
@@ -14,7 +15,8 @@ export default defineNuxtConfig({
     pageTransition: { name: "page", mode: "out-in" },
   },
 
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/image"],
   css: ["@/assets/css/main.css"],
   compatibilityDate: "2024-07-23",
 });
+
