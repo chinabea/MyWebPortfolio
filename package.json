@@ -23,11 +23,5 @@
     "consola": "^3.2.3",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4"
-  },
-  "pnpm": {
-    "overrides": {
-      "consola": "3.0.1",
-      "defu": "0.0.0"
-    }
   }
 }
