@@ -27,12 +27,8 @@
 </template>
 
 
-<script>
-export default {
-  data() {
-    return {
-      topics: [
-        { name: 'Git', image: 'https://laracasts.com/images/topics/icons/git-logo.svg?v=4', alt: 'Git logo' },
+<script setup>
+const topics = ref([{ name: 'Git', image: 'https://laracasts.com/images/topics/icons/git-logo.svg?v=4', alt: 'Git logo' },
         { name: 'MySQL', series: 3, videos: 29, image: 'https://laracasts.com/images/topics/icons/mysql-logo.svg?v=4', alt: 'MySQL logo' },
         { name: 'Nuxt', series: 13, videos: 165, image: 'https://laracasts.com/images/topics/icons/nuxtjs-logo.svg?v=4', alt: 'MySQL logo' },
         { name: 'CSS', series: 13, videos: 165, image: 'https://laracasts.com/images/topics/icons/css-logo.svg?v=4', alt: 'CSS logo' },
@@ -83,12 +79,9 @@ export default {
           videos: 165,
           image: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
           alt: 'React Native logo'
-        }
+        }]);
 
-      ],
-    };
-  },
-};
+
 </script>
 
 <style scoped>

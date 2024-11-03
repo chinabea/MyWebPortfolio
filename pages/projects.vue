@@ -1,4 +1,5 @@
 <template>
+  <div>
     <div class="mt-8"></div>
     <div class="bg-background text-foreground min-h-screen p-8 flex flex-col items-center">
       <h1 class="text-4xl font-bold font-montserrat mb-4">Projects.</h1>
@@ -15,21 +16,15 @@
         />
       </div>
     </div>
+  </div>
   </template>
   
-  <script>
+  <script setup>
   import { defineComponent } from 'vue';
   import CardComponent from './CardComponent.vue';
   import RPIMTSImage from '@/assets/images/projects/RPIMTS-Dashboard.png';
   import GratiNoteImage from '@/assets/images/projects/GratiNote.png';
-  
-  export default defineComponent({
-    components: {
-      CardComponent,
-    },
-    data() {
-      return {
-        projects: [
+  const projects = ref([
           {
             title: "Research Project Information Management and Tracking System (RPIMTS) Dashboard",
             description: "A project that involves tracking and managing various research projects.",
@@ -41,11 +36,7 @@
             description: "An application to keep track of notes and gratitude journal entries.",
             image: GratiNoteImage,
             githubLink: "https://github.com/chinabea/GratiNote-App"
-          },
-        ],
-      };
-    },
-  });
+          },]);
   </script>
   
   <style>

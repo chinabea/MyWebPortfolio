@@ -36,7 +36,7 @@
         <li><NuxtLink to="/certificate" exact-active-class="active-link">Certificates</NuxtLink></li>
         <li><NuxtLink to="/skills" exact-active-class="active-link">Skills</NuxtLink></li>
         <li>
-          <a href="mailto:china.t.bea@gmail.com" class="bg-pink-500 text-white py-2 px-4 rounded-full block text-center" target="_blank">
+          <a href="mailto:chinabea.dev@gmail.com" class="bg-pink-500 text-white py-2 px-4 rounded-full block text-center" target="_blank">
             Contact Me
           </a>
         </li>
@@ -45,14 +45,8 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      isMenuOpen: false
-    };
-  }
-};
+<script setup>
+const isMenuOpen = ref(false);
 </script>
 
 <style scoped>

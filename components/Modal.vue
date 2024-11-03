@@ -1,9 +1,9 @@
 <!-- components/Modal.vue -->
 <template>
-    <div v-if="isVisible" class="modal-overlay" @click="closeModal">
-      <div class="modal-container" @click.stop>
+    <div v-if="isVisible" class="modal-overlay" @click="closeModal()">
+      <div class="modal-container">
         <div class="modal">
-          <button class="close-button" @click="closeModal">X</button>
+          <button class="close-button" @click="closeModal()">X</button>
           <div class="modal-content">
             <slot></slot>
           </div>
@@ -12,20 +12,14 @@
     </div>
 </template>
 
-<script>
-export default {
-    props: {
-    isVisible: {
-        type: Boolean,
-        default: false
-    }
-    },
-    methods: {
-    closeModal() {
-        this.$emit('close');
-    }
-    }
-}
+<script setup>
+const emit = defineEmits();
+const props = defineProps({
+    isVisible: Boolean,
+});
+const closeModal = () => {
+  emit("close");
+};
 </script>
 
 <style scoped>

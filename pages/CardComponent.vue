@@ -16,27 +16,14 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    title: {
-      type: String,
-      required: false,
-    },
-    description: {
-      type: String,
-      required: false,
-    },
-    imageSource: {
-      type: String,
-      required: false,
-    },
-    githubLink: {
-      type: String,
-      required: false,
-    },
-  },
-};
+<script setup>
+const props = defineProps({
+  title: String,
+  description: String,
+  imageSource: String,
+  githubLink: String,
+});
+
 </script>
 
 <style scoped>

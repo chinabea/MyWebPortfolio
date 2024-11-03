@@ -6,12 +6,7 @@
   </div>
 </template>
 
-<script>
-import Hero from '@/components/hero.vue';
-
-components: {
-  Hero
-}
+<script setup>
 </script>
 
 <style scoped>

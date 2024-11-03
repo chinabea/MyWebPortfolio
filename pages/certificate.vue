@@ -1,4 +1,5 @@
 <template>
+  <div>
   <div class="mt-8"></div>
   <div class="bg-background text-foreground min-h-screen p-8 flex flex-col items-center">
     <h1 class="text-4xl font-bold font-montserrat mb-4">Certificates.</h1>
@@ -13,9 +14,10 @@
     </div>
   </div>
 </div>
+</div>
 </template>
 
-<script>
+<script setup>
 import Navbar from '@/components/navbar.vue';
 import certif1 from "@/assets/images/certificates/blockchain.jpg";
 import certif2 from "@/assets/images/certificates/bycit1.png";
@@ -26,13 +28,7 @@ import certif6 from "@/assets/images/certificates/deanslist.jpg";
 import certif7 from "@/assets/images/certificates/ojt.jpg";
 import certif8 from "@/assets/images/certificates/python.jpg";
 
-export default {
-  components: {
-    Navbar,
-  },
-  data() {
-    return {
-      projects: [
+const projects = ref([        
         { title: '', description: 'DICT - Blockchain: Fundamentals and Its Use Cases', logoPath: certif1 },
         { title: '', description: '11th Bicol Youth Congress in Information Technology', logoPath: certif2 },
         { title: '', description: '7th ICT Research Colloquium', logoPath: certif4 },
@@ -40,12 +36,7 @@ export default {
         { title: '', description: 'Dean\'s List Award', logoPath: certif6 },
         { title: '', description: 'OJT - Certificate of Completion', logoPath: certif7 },
         { title: '', description: 'Learning Python Programming', logoPath: certif8 },
-        { title: '', description: '11th Bicol Youth Congress in Information Technology', logoPath: certif3 },
-        // Add more projects with their respective images as needed
-      ],
-    };
-  },
-};
+        { title: '', description: '11th Bicol Youth Congress in Information Technology', logoPath: certif3 },]);
 </script>
 
 <style>

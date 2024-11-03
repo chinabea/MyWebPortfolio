@@ -2,15 +2,8 @@
   
 </template>
 
-<script>
-import Navbar from '@/components/navbar.vue';
+<script setup>
 
-
-export default {
-  components: {
-    Navbar,
-  }
-}
 </script>
 
 <style scoped>
